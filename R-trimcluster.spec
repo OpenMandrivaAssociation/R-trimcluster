@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.1_2
-Release:          1
+Release:          2
 Summary:          Cluster analysis with trimming
 Group:            Sciences/Mathematics
 License:          GPL
