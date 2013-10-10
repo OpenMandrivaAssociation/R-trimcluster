@@ -9,6 +9,7 @@ Group:            Sciences/Mathematics
 License:          GPL
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.1-2.tar.gz
+Source1:          NAMESPACE
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-fpc 
@@ -20,6 +21,7 @@ Trimmed k-means clustering.
 
 %prep
 %setup -q -c -n %{packname}
+cp %{SOURCE1} %{packname}/
 
 %build
 
@@ -41,3 +43,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
+
